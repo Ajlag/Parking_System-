@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parking_System.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -93,7 +94,28 @@ namespace Parking_System
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = checkBox1.Checked ? '\0' : '*';
+           // textBox2.PasswordChar = checkBox1.Checked ? '\0' : '*';
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            takeover t = new takeover();
+            t.Show();
         }
     }
 }

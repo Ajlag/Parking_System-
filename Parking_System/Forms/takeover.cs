@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Drawing.Printing;
 
-namespace Parking_System
+namespace Parking_System.Forms
 {
-    public partial class TakeoverUC : UserControl
+    public partial class takeover : Form
     {
         private List<mesta> listamesta = new List<mesta>();
-
-        public TakeoverUC()
+        public takeover()
         {
             InitializeComponent();
         }
 
-        private void TakeoverUC_Load(object sender, EventArgs e)
+        private void takeover_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("data source=DESKTOP-L1JRQG0;initial catalog=parking_servis;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;");
             SqlDataAdapter sda = new SqlDataAdapter("Select * From parkingmesto; ", con);
@@ -102,7 +101,7 @@ namespace Parking_System
 
                 string cena = xyz.Rows[0][0].ToString();  //cena po satu
 
-                SqlConnection aie = new SqlConnection("data source=AMINA;initial catalog=parking_servis;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;");
+                SqlConnection aie = new SqlConnection("data source=DESKTOP-L1JRQG0;initial catalog=parking_servis;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;");
                 try
                 {
                     DateTime tr = DateTime.Now;
@@ -117,7 +116,7 @@ namespace Parking_System
                     MessageBox.Show(ex.Message);
                 }
 
-                SqlConnection con = new SqlConnection("data source=AMINA;initial catalog=parking_servis;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;");
+                SqlConnection con = new SqlConnection("data source=DESKTOP-L1JRQG0;initial catalog=parking_servis;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;");
                 try
                 {
                     con.Open();

@@ -15,7 +15,6 @@ namespace Parking_System
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        private UserControl currentChildForm;
 
         public Admin()
         {
@@ -73,26 +72,10 @@ namespace Parking_System
 
         }
       
-        ///
-        //    if(iconPictureBox1 !=null)
-        //    {
-        //        currentChildForm.Close();
-        //    }
-        //    cur/rentChildForm = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.UsercontrolBorderStyle = UserControl.bord.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    panel3.Controls.Add(childForm);
-        //    panel3.Tag = childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //    label1.Text = childForm.Text;
-        //}
    
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
-          //  OpenChildForm(new EmployeeUC);
+            ActivateButton(sender, RGBColors.color1);         
             EmployeeUC s = new EmployeeUC();
             s.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
@@ -102,8 +85,7 @@ namespace Parking_System
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
-          //  OpenChildForm(new PricesUC);
+            ActivateButton(sender, RGBColors.color2);        
             PricesUC p = new PricesUC();
             p.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
@@ -139,14 +121,7 @@ namespace Parking_System
             panel1.Controls.Add(d);
         }
 
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color6);
-            TakeoverUC t = new TakeoverUC();
-            t.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(t);
-        }
+     
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -154,9 +129,12 @@ namespace Parking_System
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        { Admin a = new Admin();
+            a.Show();
             Reset();
-        }
+
+           
+        } 
 
         public void Reset()
         {
@@ -165,6 +143,38 @@ namespace Parking_System
             iconPictureBox1.IconChar = IconChar.Home;
             iconPictureBox1.IconColor = Color.MediumPurple;
             label1.Text = "Home";
+
+           
         }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            label2.Text = DateTime.Now.ToString("MM/dd/yyyy  H:mm:ss");
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+      
     }
 }

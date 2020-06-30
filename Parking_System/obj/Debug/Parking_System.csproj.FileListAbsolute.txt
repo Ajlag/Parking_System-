@@ -44,7 +44,6 @@ C:\Users\Dzeki\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.cs
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\Parking_System.exe.config
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.exe
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.pdb
-C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.csprojResolveAssemblyReference.cache
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.AddUC.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.DeleteUC.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.EmployeeUC.resources
@@ -53,7 +52,6 @@ C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.For
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.PricesUC.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.Properties.Resources.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.ShowUC.resources
-C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.TakeoverUC.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.User.resources
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.csproj.GenerateResource.Cache
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\Parking_System.exe
@@ -63,3 +61,6 @@ C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\EntityFramework.Sq
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\EntityFramework.xml
 C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ajla\Desktop\Parking_System\Parking_System\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.csprojResolveAssemblyReference.cache
+C:\Users\Ajla\Desktop\Parking_System\Parking_System\obj\Debug\Parking_System.Forms.takeover.resources

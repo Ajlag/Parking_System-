@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using FontAwesome.Sharp;
 
 namespace Parking_System
 {
@@ -161,13 +162,13 @@ namespace Parking_System
                         int x_pos = m.x;
                         int y_pos = m.y;
 
-                        Button btn = new Button();
+                        IconButton btn = new IconButton();
                         //iscrtavanje standardnih mesta A1-A5, A10-A24
                         if (orijentacija == 0)
                         {
                             btn.Location = new Point(m.x, m.y);
                             btn.Name = m.oznaka;
-                            btn.Text = m.oznaka;
+                          //  btn.Text = m.oznaka;
                             btn.Size = new Size(80, 45);
                             btn.BringToFront();
                         }
@@ -175,7 +176,7 @@ namespace Parking_System
                         {
                             btn.Location = new Point(m.x, m.y);
                             btn.Name = m.oznaka;
-                            btn.Text = m.oznaka;
+                            //btn.Text = m.oznaka;
                             btn.Size = new Size(48, 80);
                             btn.BringToFront();
                             btn.BackColor = Color.Green;
@@ -183,11 +184,14 @@ namespace Parking_System
                         }
                         if (m.trenutnoStanje == 0)
                         {
-                            btn.BackColor = Color.Green;
+                            btn.BackColor = Color.Green;                          
                         }
                         else
                         {
-                            btn.BackColor = Color.Red;
+                            btn.IconChar = IconChar.CarSide;
+                            btn.IconColor = Color.Red;
+                            btn.IconSize =  45;
+                           // btn.BackColor = Color.Red;
                         }
 
                         this.Controls.Add(btn);
